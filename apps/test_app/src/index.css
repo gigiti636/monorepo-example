@@ -1,0 +1,90 @@
+:root {
+  font-family:  'FontUp',Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,html, #root{
+  padding:0;
+  margin:0;
+}
+
+#root{
+  margin: 0 auto;
+  text-align: center;
+  /*height: 100%;*/
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: local('FontUp'), url(./theme/fonts/CFAstyStd-Light.otf) format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(./theme/fonts/CFAstyStd-LightOblique.otf) format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: local('FontUp'), url(./theme/fonts/CFAstyStd-Book.otf) format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(./theme/fonts/CFAstyStd-BookOblique.otf) format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(./theme/fonts/CFAstyStd-Medium.otf) format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(./theme/fonts/CFAstyStd-MediumOblique.otf) format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(./theme/fonts/CFAstyStd-Bold.otf) format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(./theme/fonts/CFAstyStd-BoldOblique.otf) format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* x-grid */
+.text-bold{
+  font-weight: bold;
+}
+.text-red{
+  color: red;
+}
+.MuiDataGrid-columnHeaderTitleContainerContent , .MuiDataGrid-columnHeaderTitle{
+  width: 100%;
+}

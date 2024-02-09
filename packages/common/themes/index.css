@@ -1,0 +1,125 @@
+:root {
+  font-family:  'FontUp',Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,html, #root{
+  padding:0;
+  margin:0;
+}
+
+#root{
+  margin: 0 auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: local('FontUp'), url(fonts/CFAstyStd-Light.otf) format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(fonts/CFAstyStd-LightOblique.otf) format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: local('FontUp'), url(fonts/CFAstyStd-Book.otf) format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(fonts/CFAstyStd-BookOblique.otf) format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(fonts/CFAstyStd-Medium.otf) format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(fonts/CFAstyStd-MediumOblique.otf) format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(fonts/CFAstyStd-Bold.otf) format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontUp';
+  src: url(fonts/CFAstyStd-BoldOblique.otf) format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* x-grid */
+.text-bold{
+  font-weight: bold;
+}
+.text-red{
+  color: red;
+}
+.MuiDataGrid-columnHeaderTitleContainerContent , .MuiDataGrid-columnHeaderTitle{
+  width: 100%;
+}
+
+/* login-animation */
+.animation-wrapper .logo-container .logo{
+  animation: logo-animation 8s infinite;
+}
+.logo-container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 119px;
+}
+@keyframes logo-animation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  10%{
+    transform: translate(0, 0) rotate(-45deg) scale(1.15);
+  }
+  30% {
+    transform: translate(131px, 0) rotate(90deg) scale(1.15);
+  }
+  55% {
+    transform: translate(-131px, 0px) rotate(-180deg) scale(1.15);
+  }
+  85% {
+    transform: translate(0, 0px) rotate(0deg) scale(1.15);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg) scale(1);
+  }
+}
+
